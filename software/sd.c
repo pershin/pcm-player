@@ -35,8 +35,8 @@ uint8_t sd_cmd(
 }
 
 uint8_t sd_read(uint8_t *pointer, uint32_t sector) {
-  uint8_t result, value, i;
-  uint16_t n = 512;
+  uint8_t result, value;
+  uint16_t i;
 
   result = SD_ERROR;
 
@@ -49,7 +49,7 @@ uint8_t sd_read(uint8_t *pointer, uint32_t sector) {
    * length is fixed 512 Bytes regardless of the
    * SET_BLOCKLEN command. */
   if (0 == sd_cmd(0x51, (uint8_t) (sector >> 24), (uint8_t) (sector >> 16), (uint8_t) (sector >> 8), (uint8_t) (sector), 0x1)) { /* READ_SINGLE_BLOCK */
-    for (i = 255; 0 != i; i--) {
+    for (i = 65535; 0 != i; i--) {
       value = spi_receive();
 
       if (0xFF != value) {
@@ -58,7 +58,7 @@ uint8_t sd_read(uint8_t *pointer, uint32_t sector) {
     }
 
     if (0xFE == value) {
-      for (; 0 != n; n--) {
+      for (i = 512; 0 != i; i--) {
         *pointer++ = spi_receive();
       }
 
