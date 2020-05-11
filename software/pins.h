@@ -1,3 +1,10 @@
+/*
+ * File:   pins.h
+ * Author: Sergey Pershin <sergey.pershin at hotmail.com>
+ *
+ * Created on May 8, 2020, 7:20 PM
+ */
+
 #ifndef PINS_H
 #define PINS_H
 

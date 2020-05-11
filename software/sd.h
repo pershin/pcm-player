@@ -1,3 +1,10 @@
+/*
+ * File:   sd.h
+ * Author: Sergey Pershin <sergey.pershin at hotmail.com>
+ *
+ * Created on May 8, 2020, 7:20 PM
+ */
+
 #ifndef SD_H
 #define SD_H
 

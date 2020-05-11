@@ -1,3 +1,10 @@
+/*
+ * File:   sd.c
+ * Author: Sergey Pershin <sergey.pershin at hotmail.com>
+ *
+ * Created on May 8, 2020, 7:19 PM
+ */
+
 #include <avr/io.h>
 #include "pins.h"
 #include "spi.h"

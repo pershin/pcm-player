@@ -1,3 +1,10 @@
+;------------------------------------------------------------------------------;
+; File:   main.S
+; Author: Sergey Pershin <sergey.pershin at hotmail.com>
+;
+; Created on May 8, 2020, 7:19 PM
+
+
 .nolist
 #include <avr/io.h>
 #include "player.h"
