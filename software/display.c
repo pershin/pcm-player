@@ -10,8 +10,6 @@
 #include "spi.h"
 #include "display.h"
 
-extern uint16_t current_track;
-
 const uint8_t digits[10] = {
   0b11111100,
   0b01100000,
