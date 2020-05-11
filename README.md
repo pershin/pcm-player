@@ -13,7 +13,7 @@ SDHC 2-32GB must be formatted to FAT32
 Property          | Value
 ------------------|----------------------------
 | Format:         | Unsigned 8-bit PCM (RAW)  |
-| Sample rate:    | 44100 kHz                 |
+| Sample rate:    | 44100 Hz                  |
 | Channels:       | 2                         |
 | File extension: | *.PCM                     |
 
