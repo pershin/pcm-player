@@ -149,8 +149,8 @@ void init() {
   /* TIMER1_COMPA_vect */
   TCCR1B = (1 << WGM12) | (1 << CS10);
 
-  /* 44 kHz (F_CPU / 44100) == 362 */
-  OCR1A = 362;
+  /* 44.1 kHz */
+  OCR1A = F_CPU / SAMPLE_RATE;
 
   /* Start PWM */
   TCCR0B = (1 << CS00); /* no prescaling */
@@ -177,13 +177,11 @@ int main(void) {
 
   command_id = 0;
   old_track = 0;
-  current_track = 1;
   old_seconds = 0;
-  seconds = 0;
   show_track = 3;
-  buffer_position = 0;
-  buffer_n = 0;
 
+  stop();
+  current_track = 1;
   open(current_track);
   play();
 
