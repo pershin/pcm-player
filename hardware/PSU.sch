@@ -1,0 +1,178 @@
+EESchema Schematic File Version 4
+LIBS:PCM Player-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title "PCM Player"
+Date "2020-05-07"
+Rev "0"
+Comp "Sergey Pershin <sergey.pershin at hotmail.com>"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:D_Bridge_+AA- D?
+U 1 1 5EC83CE0
+P 2450 1850
+F 0 "D?" H 2650 2100 50  0000 L CNN
+F 1 "D_Bridge_+AA-" H 2650 2000 50  0000 L CNN
+F 2 "Diode_THT:Diode_Bridge_Vishay_GBL" H 2450 1850 50  0001 C CNN
+F 3 "~" H 2450 1850 50  0001 C CNN
+	1    2450 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 5EC8531C
+P 3250 2100
+F 0 "C?" H 3368 2146 50  0000 L CNN
+F 1 "CP" H 3368 2055 50  0000 L CNN
+F 2 "" H 3288 1950 50  0001 C CNN
+F 3 "~" H 3250 2100 50  0001 C CNN
+	1    3250 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:LM1085-5.0 U?
+U 1 1 5EC861FA
+P 4050 1850
+F 0 "U?" H 4050 2092 50  0000 C CNN
+F 1 "LM1085-5.0" H 4050 2001 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4050 2100 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm1085.pdf" H 4050 1850 50  0001 C CNN
+	1    4050 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EC88367
+P 3250 2450
+F 0 "#PWR?" H 3250 2200 50  0001 C CNN
+F 1 "GND" H 3255 2277 50  0000 C CNN
+F 2 "" H 3250 2450 50  0001 C CNN
+F 3 "" H 3250 2450 50  0001 C CNN
+	1    3250 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EC891D1
+P 2050 1950
+F 0 "#PWR?" H 2050 1700 50  0001 C CNN
+F 1 "GND" H 2055 1777 50  0000 C CNN
+F 2 "" H 2050 1950 50  0001 C CNN
+F 3 "" H 2050 1950 50  0001 C CNN
+	1    2050 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 1850 2050 1850
+Wire Wire Line
+	2050 1850 2050 1950
+$Comp
+L Device:CP C?
+U 1 1 5EC8B5E7
+P 4650 2100
+F 0 "C?" H 4768 2146 50  0000 L CNN
+F 1 "CP" H 4768 2055 50  0000 L CNN
+F 2 "" H 4688 1950 50  0001 C CNN
+F 3 "~" H 4650 2100 50  0001 C CNN
+	1    4650 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5EC8A723
+P 5850 1500
+F 0 "#PWR?" H 5850 1350 50  0001 C CNN
+F 1 "+3.3V" H 5865 1673 50  0000 C CNN
+F 2 "" H 5850 1500 50  0001 C CNN
+F 3 "" H 5850 1500 50  0001 C CNN
+	1    5850 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:LP2950-3.3_TO92 U?
+U 1 1 5EC865B9
+P 5250 1850
+F 0 "U?" H 5250 2092 50  0000 C CNN
+F 1 "LP2950-3.3_TO92" H 5250 2001 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5250 2075 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lp2950-n.pdf" H 5250 1800 50  0001 C CNN
+	1    5250 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5EC89D4A
+P 4650 1500
+F 0 "#PWR?" H 4650 1350 50  0001 C CNN
+F 1 "+5V" H 4665 1673 50  0000 C CNN
+F 2 "" H 4650 1500 50  0001 C CNN
+F 3 "" H 4650 1500 50  0001 C CNN
+	1    4650 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 1850 4650 1850
+Wire Wire Line
+	4650 1850 4650 1950
+Connection ~ 4650 1850
+Wire Wire Line
+	4650 1850 4950 1850
+Wire Wire Line
+	4650 2250 4650 2350
+Wire Wire Line
+	4050 2150 4050 2350
+Wire Wire Line
+	4050 2350 4650 2350
+Connection ~ 4650 2350
+Wire Wire Line
+	3250 2350 3250 2450
+Wire Wire Line
+	5250 2150 5250 2350
+Wire Wire Line
+	5250 2350 4650 2350
+Wire Wire Line
+	4650 1500 4650 1850
+Wire Wire Line
+	5850 1500 5850 1850
+Wire Wire Line
+	5550 1850 5850 1850
+$Comp
+L Device:C C?
+U 1 1 5EC95DA2
+P 5850 2100
+F 0 "C?" H 5965 2146 50  0000 L CNN
+F 1 "C" H 5965 2055 50  0000 L CNN
+F 2 "" H 5888 1950 50  0001 C CNN
+F 3 "~" H 5850 2100 50  0001 C CNN
+	1    5850 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 1850 5850 1950
+Connection ~ 5850 1850
+Wire Wire Line
+	5850 2250 5850 2350
+Wire Wire Line
+	5850 2350 5250 2350
+Connection ~ 5250 2350
+Wire Wire Line
+	3750 1850 3250 1850
+Wire Wire Line
+	3250 1850 3250 1950
+Wire Wire Line
+	4050 2350 3250 2350
+Wire Wire Line
+	3250 2350 3250 2250
+Connection ~ 4050 2350
+Connection ~ 3250 2350
+Wire Wire Line
+	3250 1850 2750 1850
+Connection ~ 3250 1850
+$EndSCHEMATC
