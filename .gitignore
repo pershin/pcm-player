@@ -23,9 +23,7 @@ fp-info-cache
 *.csv
 
 # NetBeans
+software/.dep.inc
+software/build
 software/nbproject
-
-# Others
-upload.bat
-software/output
-software/Makefile
+software/upload.bat
