@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name PCM-Player-rescue)(type Legacy)(uri "${KIPRJMOD}/PCM Player-rescue.lib")(options "")(descr ""))
+)

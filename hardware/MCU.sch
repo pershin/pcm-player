@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:PCM Player-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 3
+Sheet 2 4
 Title "PCM Player"
 Date "2020-05-07"
 Rev "0"
@@ -15,9 +14,11 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_Microchip_ATmega:ATmega328P-PU U1
+L PCM-Player-rescue:ATmega328P-PU-MCU_Microchip_ATmega U1
 U 1 1 5EB47D68
 P 2850 2750
+AR Path="/5EB47D68" Ref="U1"  Part="1" 
+AR Path="/5EB47CA7/5EB47D68" Ref="U1"  Part="1" 
 F 0 "U1" H 2206 2796 50  0000 R CNN
 F 1 "ATmega328P-PU" H 2206 2705 50  0000 R CNN
 F 2 "Package_DIP:DIP-28_W7.62mm" H 2850 2750 50  0001 C CIN

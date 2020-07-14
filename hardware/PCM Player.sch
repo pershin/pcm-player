@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:PCM Player-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 4
 Title "PCM Player"
 Date "2020-05-07"
 Rev "0"
@@ -19,12 +18,6 @@ S 2000 2000 1500 1000
 U 5EB47CA7
 F0 "Microcontroller Unit" 50
 F1 "MCU.sch" 50
-$EndSheet
-$Sheet
-S 2000 750  1500 1000
-U 5EC8138E
-F0 "Power Supply Unit" 50
-F1 "PSU.sch" 50
 $EndSheet
 $Comp
 L Mechanical:MountingHole H2
@@ -70,4 +63,19 @@ F 3 "~" H 3950 850 50  0001 C CNN
 	1    3950 850 
 	1    0    0    -1  
 $EndComp
+$Sheet
+S 3750 2000 1500 1000
+U 5F12834A
+F0 "Amplifier Unit" 50
+F1 "Amp.sch" 50
+F2 "LIN" I L 3750 2100 50 
+F3 "RIN" I L 3750 2300 50 
+F4 "INGND" I L 3750 2200 50 
+$EndSheet
+$Sheet
+S 2000 750  1500 1000
+U 5EC8138E
+F0 "Power Supply Unit" 50
+F1 "PSU.sch" 50
+$EndSheet
 $EndSCHEMATC
